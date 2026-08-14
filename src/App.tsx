@@ -1,12 +1,14 @@
 import { Route, Routes } from "react-router-dom"
 
 
-import { SignupPage } from "./pages/form/singup-page"
+import { SignupForm } from "./pages/form/signup-form"
+import { VagasPage } from "./pages/vagas/vagas-page"
 
 export function App() {
   return (
       <Routes>  
-        <Route path="/" element={<SignupPage />} />
+        <Route path="/" element={<SignupForm   />} />
+        <Route path="/vagas" element={<VagasPage />} />
       </Routes>
   ) 
 }
